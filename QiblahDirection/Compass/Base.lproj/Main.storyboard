@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Compass" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compassback" translatesAutoresizingMaskIntoConstraints="NO" id="kLs-fB-4yV">
+                                <rect key="frame" x="37.5" y="166.5" width="300" height="333.5"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="needleneedle" translatesAutoresizingMaskIntoConstraints="NO" id="XnX-an-oj1">
+                                <rect key="frame" x="97" y="225.5" width="180" height="216.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XnX-an-oj1" firstAttribute="height" secondItem="kLs-fB-4yV" secondAttribute="height" multiplier="0.65" id="ArH-c3-DgL"/>
+                            <constraint firstItem="kLs-fB-4yV" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="Lp3-aN-bdt"/>
+                            <constraint firstItem="XnX-an-oj1" firstAttribute="centerY" secondItem="kLs-fB-4yV" secondAttribute="centerY" id="W1q-GG-l1x"/>
+                            <constraint firstItem="XnX-an-oj1" firstAttribute="centerX" secondItem="kLs-fB-4yV" secondAttribute="centerX" id="Wad-QV-CfQ"/>
+                            <constraint firstItem="kLs-fB-4yV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="ZRn-mE-r2G"/>
+                            <constraint firstItem="kLs-fB-4yV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hPx-rv-mVd"/>
+                            <constraint firstItem="XnX-an-oj1" firstAttribute="width" secondItem="kLs-fB-4yV" secondAttribute="width" multiplier="0.6" id="sTw-ro-TVX"/>
+                            <constraint firstItem="kLs-fB-4yV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ytt-ob-26Z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ivCompassBack" destination="kLs-fB-4yV" id="2pG-eM-BgX"/>
+                        <outlet property="ivCompassNeedle" destination="XnX-an-oj1" id="2vT-at-SSH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="compassback" width="752" height="752"/>
+        <image name="needleneedle" width="79" height="747"/>
+    </resources>
+</document>
